@@ -15,16 +15,17 @@ namespace Lesson11_01
                                                          new AircraftModelRepository(), 
                                                          new CompanyRepository(), 
                                                          new CountryRepository());
-            int i = 0;
+            
             HTMLGenerator htmlFile = new HTMLGenerator(report);
 
+            int i = 0;
             foreach (var air in report.GenerateReportOfAircrafts())
             {
                 i++;
                 Console.WriteLine($"{i}. {air.AircraftTailNumberItem}");
             }
 
-            File.WriteAllText("Allaircrafts.html", htmlFile.GenerateHTMLWithColor(report.GenerateReportOfAircrafts()));                     // All aircrafts
+            File.WriteAllText("All_aircrafts.html", htmlFile.GenerateHTMLWithColor(report.GenerateReportOfAircrafts()));                    // All aircrafts
             File.WriteAllText("EU_aircrafts.html", htmlFile.GenerateHTMLWithColor(report.GenerateReportAircraftInEurope(true)));            // Aircrafts from EU country
             File.WriteAllText("non-EU_aircrafts.html", htmlFile.GenerateHTMLWithColor(report.GenerateReportAircraftInEurope(false)));       // Aircrafts not from EU country
         }

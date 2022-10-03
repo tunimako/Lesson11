@@ -13,16 +13,16 @@ namespace Lesson11_01.Repositories
         public CountryRepository()
         {
             CountryList = new List<Country>();
-            CountryList.Add(new Country(0, "Germany", "GER", true));
-            CountryList.Add(new Country(1, "Latvia", "LV", true));
-            CountryList.Add(new Country(2, "Turkey", "TR", false));
-            CountryList.Add(new Country(3, "Canada", "CAN", false));
-            CountryList.Add(new Country(4, "India", "IND", false));
-            CountryList.Add(new Country(5, "China", "CN", false));
-            CountryList.Add(new Country(6, "Poland", "PL", true));
-            CountryList.Add(new Country(7, "Switzerland", "CHE", false));
-            CountryList.Add(new Country(8, "Hungary", "HU", true));
-            CountryList.Add(new Country(9, "Italy", "IT", true));
+            CountryList.Add(new Country("Germany", "GER", true));
+            CountryList.Add(new Country("Latvia", "LV", true));
+            CountryList.Add(new Country("Turkey", "TR", false));
+            CountryList.Add(new Country("Canada", "CAN", false));
+            CountryList.Add(new Country("India", "IND", false));
+            CountryList.Add(new Country("China", "CN", false));
+            CountryList.Add(new Country("Poland", "PL", true));
+            CountryList.Add(new Country("Switzerland", "CHE", false));
+            CountryList.Add(new Country("Hungary", "HU", true));
+            CountryList.Add(new Country("Italy", "IT", true));
         }
         public List<Country> Retrive()
         {

@@ -10,11 +10,11 @@ namespace Lesson11_01.Repositories
     internal class AircraftRepository
     {
         private List<Aircraft> AircraftList { get; set; }
-        public AircraftRepository()
+        public AircraftRepository() 
         {
             AircraftList = new List<Aircraft>();
 
-            for (int i = 0; i < 5000; i++)
+            for (int i = 0; i < 100; i++)      //Tail number generator
             {
                 Random rnd = new Random();
                 int ascii_index1 = rnd.Next(65, 91);

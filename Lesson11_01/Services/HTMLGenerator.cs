@@ -48,7 +48,7 @@ namespace Lesson11_01.Services
                 }
                 else 
                 {
-                    color = "";
+                    color = "#FFFFFF";
                 }
                     aircraftList = aircraftList + $"<tr style=\"background-color:{color};\">" +
                                                   $"<td>{aircraft.AircraftTailNumberItem}</td>" +
